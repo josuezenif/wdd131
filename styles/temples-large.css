@@ -1,0 +1,15 @@
+@media (min-width: 37.5em) {
+    #menu {
+        display: none;
+        /* hides the hamburger icon */
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}

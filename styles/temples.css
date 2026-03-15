@@ -1,0 +1,142 @@
+:root {
+    --principleColor: rgb(41, 76, 107)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 850px;
+    margin: 0 auto;
+    display: block;
+    background-color: var(--principleColor);
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 12px;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    align-self: center;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 5px;
+    text-align: center;
+}
+
+nav a:hover {
+    display: block;
+    background-color: rgb(39, 68, 77);
+    padding: 5px;
+    border: 2px solid beige;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    background-color: rgb(41, 76, 107);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.current-year {
+    color: rgb(224, 217, 79);
+}
+
+/* small view navigation */
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: relative;
+    left: 90%;
+    bottom: 15px;
+}
+
+#menu::before {
+    content: "☰";
+    color: #fff;
+}
+
+#menu.open::before {
+    content: "❌";
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    color: #fff;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* when button is clicked -- the open class is toggled */
+.open a {
+    display: block;
+}
+
+@media screen and (max-width: 37.5em) {
+    .temples {
+        display: flex;
+        flex-direction: column;
+    }
+}
