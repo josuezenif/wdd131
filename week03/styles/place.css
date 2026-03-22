@@ -1,0 +1,145 @@
+:root {
+    --mainColor: rgb(134, 71, 42);
+    --mainFont: Arial,
+        Helvetica,
+        sans-serif;
+    --headingsInfo: rgb(99, 36, 36);
+}
+
+* {
+    width: 100%;
+    margin: 0 auto;
+}
+
+picture {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+h1 {
+    display: block;
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+header {
+    border-bottom: 25px solid var(--headingsInfo);
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+h2 {
+    background-color: var(--headingsInfo);
+    padding: 12px;
+    color: #fff;
+}
+
+.data {
+    position: absolute;
+    bottom: 32%;
+    left: 3rem;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    max-width: 320px;
+    padding: 15px;
+    opacity: 0.78;
+}
+
+h3 {
+    background-color: var(--headingsInfo);
+    padding: 20px;
+    color: #fff;
+}
+
+.weather {
+    position: absolute;
+    left: 70%;
+    bottom: 1px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    padding: 15px;
+    opacity: 0.82;
+}
+
+.weather-icon {
+    position: absolute;
+    left: 8rem;
+    bottom: 10.2rem;
+    width: 3rem;
+    height: 15px;
+}
+
+.weather-icon::after {
+    content: "✨";
+    position: absolute;
+    padding: 5px;
+}
+
+ul li {
+    padding: 2px;
+    list-style: none;
+}
+
+footer {
+    display: block;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.current-year {
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 37.5em) {
+    .charts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .data {
+        display: block;
+        background-color: #fff2d7;
+        max-width: 400px;
+        margin: 0 auto;
+        opacity: 1;
+        max-width: 100%;
+        position: relative;
+        padding: 0;
+        left: auto;
+        text-align: center;
+    }
+
+    .weather {
+        display: block;
+        background-color: #fff2d7;
+        max-width: 100%;
+        margin: 0 auto;
+        opacity: 1;
+        position: relative;
+        padding: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .weather-icon {
+        left: 20rem;
+        bottom: 10.7rem;
+    }
+
+    ul li {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Mexico Weather and Info</title>
+    <meta name="description"
+        content="This page is to get a country of the world and display weather and country info. For phone and computer view">
+    <meta name="author" content="Josue Zenif Baez Gomez">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/large-mx-hero.webp" media="(min-width: 700px)" width="1080" height="750">
+            <img src="images/small-mx-hero.webp" alt="Mexico Pyramids representing Mexico" width="400" height="624">
+        </picture>
+
+        <section class="charts">
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area: </strong>1,972,550 sq kilometers</li>
+                    <li><strong>Population: </strong>135.6 million</li>
+                    <li><strong>Capital: </strong>Mexico City</li>
+                    <li><strong>Languages: </strong>Spanish (Latin American)</li>
+                    <li><strong>Currency: </strong>Mexican Pesos $</li>
+                    <li><strong>Time Zone: </strong>GMT-6</li>
+                    <li><strong>Calling Code: </strong>+52</li>
+                    <li><strong>Internet TDL: </strong>.mx</li>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <h3>Weather <div class="weather-icon"><img src="images/weather-icon.svg"
+                            alt="weather icon to go along with weather title"></div>
+                </h3>
+                <ul>
+                    <li><strong>Temperature: </strong>18°C</li>
+                    <li><strong>Conditions: </strong>Cloudy</li>
+                    <li><strong>Wind: </strong>37 km/h</li>
+                    <li class="windtemp"><strong>Wind Chill: </strong>
+                        <p id="windChill"></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span>
+            Josue Zenif Baez Gomez 🇲🇽 | Quebec Canada 🍁
+        </p>
+        <p id="lastModified" class="current-year"></p>
+    </footer>
+
+</body>
+
+</html>
