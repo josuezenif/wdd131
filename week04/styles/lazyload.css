@@ -1,0 +1,32 @@
+* {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+    display: block;
+    background-color: rgb(41, 76, 107);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.current-year {
+    color: rgb(255, 247, 93);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Images practice</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Haikyuu Lazy Loading practice</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img src="images/dumpster-battle.webp" alt="Haikyuu Team Image" loading="lazy" width="auto" height="600">
+        </picture>
+
+        <picture>
+            <img src="images/haikyuu team.avif" alt="Haikyuu Team Image" loading="lazy" width="auto" height="600px">
+        </picture>
+
+        <picture>
+            <img src="images/haikyuu-most-hilarious-players.avif" alt="Haikyuu Team Image" loading="lazy" width="auto"
+                height="600px">
+        </picture>
+
+        <picture>
+            <img src="images/hinata-jump.jpg" alt="Haikyuu Team Image" loading="lazy" width="auto" height="600px">
+        </picture>
+
+        <picture>
+            <img src="images/nishinoya-tanaka.avif" alt="Haikyuu Team Image" loading="lazy" width="auto" height="600px">
+        </picture>
+
+        <picture>
+            <img src="images/volleyballs.webp" alt="Haikyuu Team Image" loading="lazy" width="auto" height="600px">
+        </picture>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span>
+            Josue Zenif Baez Gomez 🇲🇽 | Quebec Canada 🍁
+        </p>
+        <p id="lastModified" class="current-year"></p>
+    </footer>
+
+</body>
+
+</html>
