@@ -1,0 +1,46 @@
+:root {
+    --borderLine: 1.5px solid rgb(87, 87, 87);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    /* border: var(--borderLine); */
+    border-left: var(--borderLine);
+    border-top: var(--borderLine);
+    border: var(--borderLine);
+}
+
+.heading {
+    background-color: rgb(70, 70, 70);
+    color: #fff;
+}
+
+.main-heading {
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+}
+
+tr th {
+    padding: 10px;
+}
+
+tr td {
+    padding: 10px;
+    text-align: center;
+    border-left: var(--borderLine);
+    border-top: var(--borderLine);
+}
+
+footer {
+    display: block;
+    background-color: rgb(102, 247, 252);
+    padding: 10px;
+    max-width: 306.5px;
+    text-align: center;
+    border-left: var(--borderLine);
+    border-bottom: var(--borderLine);
+    border-right: var(--borderLine);
+}
