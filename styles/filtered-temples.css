@@ -1,0 +1,147 @@
+:root {
+    --principleColor: rgb(41, 76, 107)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 850px;
+    margin: 0 auto;
+    display: block;
+    background-color: var(--principleColor);
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 12px;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+main {
+    max-width: 850px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+nav a:hover {
+    display: block;
+    background-color: #bbb;
+    padding: 5px;
+    border: 2px solid beige;
+    color: #333;
+    font-size: 1.5em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* css rules for the temple names and cards */
+div {
+    border: 1px solid rgb(111, 111, 111);
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+.temple-img {
+    display: block;
+    margin: 18px;
+    border: 3px solid lightgray;
+    box-shadow: 0 0 5px black;
+}
+
+/* end of temple rules */
+
+footer {
+    display: block;
+    background-color: rgb(41, 76, 107);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.current-year {
+    color: rgb(224, 217, 79);
+}
+
+/* small view navigation */
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: relative;
+    left: 90%;
+    bottom: 15px;
+}
+
+#menu::before {
+    content: "☰";
+    color: #fff;
+}
+
+#menu.open::before {
+    content: "❌";
+    color: #fff;
+}
+
+/* when button is clicked -- the open class is toggled */
+.open a {
+    display: block;
+}
+
+@media screen and (max-width: 37.5em) {
+    .temples {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .temple-img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
