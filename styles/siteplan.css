@@ -1,0 +1,68 @@
+/* headerFooter color is the color for the headers and footer */
+/* paragraph color will be used for paragraph's background color*/
+/* the heading font is arial helvetica sans serif for all headings */
+/* the body font for the body and paragraphs is montserrat sans serif */
+
+:root {
+    --headerFooterColor: rgb(136, 225, 250);
+    --paragraphColor: rgb(221, 217, 214);
+    --headingFont: Arial, Helvetica, sans-serif;
+    --bodyFont: 'Montserrat', sans-serif;
+    --borderColor: 1.5px solid rgb(77, 59, 94);
+
+}
+
+* {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    background-color: var(--headerFooterColor);
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--headerFooterColor);
+    text-align: center;
+}
+
+main p {
+    background-color: var(--paragraphColor);
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+footer {
+    font-family: var(--headingFont);
+}
+
+header p,
+main p {
+    font-family: var(--bodyFont);
+}
+
+/* might not actually do this in the real project. It's just to write something */
+
+@media screen and (max-width: 37.5em) {
+    header {
+        border: 1.5px solid rgb(77, 59, 94);
+    }
+
+    main {
+        border-bottom: var(--borderColor);
+        border-left: var(--borderColor);
+        border-right: var(--borderColor);
+    }
+
+    footer {
+        border-bottom: var(--borderColor);
+        border-left: var(--borderColor);
+        border-right: var(--borderColor);
+    }
+}
