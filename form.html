@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product review From</title>
+    <meta name="author" content="Josue Zenif Baez Gomez">
+    <meta name="description"
+        content="This page is a Product review from where the user will be able to submit a form with their review.">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Product Review</h1>
+
+        <!-- SELECTING PRODUCT NAME -->
+        <form method="get" action="review.html" class="form">
+            <label>Product Name
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </label>
+
+            <!-- OVERALL RATING WITH STARS -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" name="star" id="star1" value="one-star" required>⭐️</label>
+                <label><input type="radio" name="star" id="star2" value="two-star" required>⭐️⭐️</label>
+                <label><input type="radio" name="star" id="star3" value="three-star" required>⭐️⭐️⭐️</label>
+                <label><input type="radio" name="star" id="star4" value="four-star" required>⭐️⭐️⭐️⭐️</label>
+                <label><input type="radio" name="star" id="star5" value="five-star" required>⭐️⭐️⭐️⭐️⭐️</label>
+            </fieldset>
+
+            <!-- DATE OF INSTALLATION -->
+            <fieldset>
+                <label>
+                    <div>Date of Installation</div>
+                    <input type="date" name="date" id="install-date" required>
+                </label>
+            </fieldset>
+
+            <!-- USEFUL FEAUTURES -->
+            <fieldset>
+                <legend>Useful Features</legend>
+                <label>
+                    <div>
+                        Which features did you find useful in the product? <strong>(Check all that apply)</strong>
+                    </div>
+                    <input type="checkbox" name="feature" id="option1" value="durability">Durability
+                </label>
+                <label><input type="checkbox" name="feature" id="option2" value="easy-use">Ease of Use</label>
+                <label><input type="checkbox" name="feature" id="option3" value="performance">Performance</label>
+                <label><input type="checkbox" name="feature" id="option4" value="design">Design</label>
+            </fieldset>
+
+            <!-- WRITTEN REVIEW -->
+            <fieldset>
+                <legend>Written Review (optional)</legend>
+                <label>
+                    <div>Write your experience in more detail</div>
+                    <textarea name="textarea" id="written-review" cols="40" rows="10"></textarea>
+                </label>
+            </fieldset>
+
+            <!-- USER NAME -->
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label>
+                    <div>Your name (optional)</div>
+                    <input type="text" name="name" id="user-name">
+                </label>
+            </fieldset>
+
+            <!-- SUBMISSION BUTTON -->
+            <input type="submit" value="Send Product Review!">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span>
+            Josue Zenif Baez Gomez 🇲🇽 | Quebec Canada 🍁
+        </p>
+        <p id="lastModified" class="current-year"></p>
+
+    </footer>
+
+</body>
+
+</html>
