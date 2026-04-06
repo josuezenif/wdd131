@@ -23,7 +23,7 @@
 
         <!-- SELECTING PRODUCT NAME -->
         <form method="get" action="review.html" class="form">
-            <label>Product Name <select name="product" id="product" required>
+            <label for="product">Product Name <select name="product" id="product" required>
                     <label>
                         <option value="" disabled selected>Select a Product...</option>
                     </label>
@@ -33,11 +33,13 @@
             <!-- OVERALL RATING WITH STARS -->
             <fieldset>
                 <legend>Overall Rating</legend>
-                <label><input type="radio" name="star" id="star1" value="one-star" required>⭐️</label>
-                <label><input type="radio" name="star" id="star2" value="two-star" required>⭐️⭐️</label>
-                <label><input type="radio" name="star" id="star3" value="three-star" required>⭐️⭐️⭐️</label>
-                <label><input type="radio" name="star" id="star4" value="four-star" required>⭐️⭐️⭐️⭐️</label>
-                <label><input type="radio" name="star" id="star5" value="five-star" required>⭐️⭐️⭐️⭐️⭐️</label>
+                <label for="star1"><input type="radio" name="star" id="star1" value="one-star" required>⭐️</label>
+                <label for="star2"><input type="radio" name="star" id="star2" value="two-star" required>⭐️⭐️</label>
+                <label for="star3"><input type="radio" name="star" id="star3" value="three-star" required>⭐️⭐️⭐️</label>
+                <label for="star4"><input type="radio" name="star" id="star4" value="four-star"
+                        required>⭐️⭐️⭐️⭐️</label>
+                <label for="star5"><input type="radio" name="star" id="star5" value="five-star"
+                        required>⭐️⭐️⭐️⭐️⭐️</label>
             </fieldset>
 
             <!-- DATE OF INSTALLATION -->
@@ -45,7 +47,7 @@
                 <legend>Date of Installation</legend>
                 <div>Select the date</div>
 
-                <label><input type="date" name="date" id="install-date" required>.</label>
+                <label for="install-date"><input type="date" name="date" id="install-date" required>.</label>
             </fieldset>
 
             <!-- USEFUL FEAUTURES -->
@@ -53,29 +55,37 @@
                 <legend>Useful Features</legend>
                 <div>Which features did you find useful in the product? <strong>(Check all that
                         apply)</strong></div>
-                <label><input type="checkbox" name="feature" id="option1" value="durability">Durability</label>
-                <label><input type="checkbox" name="feature" id="option2" value="easy-use">Ease of Use</label>
-                <label><input type="checkbox" name="feature" id="option3" value="performance">Performance</label>
-                <label><input type="checkbox" name="feature" id="option4" value="design">Design</label>
+
+                <label for="option1"><input type="checkbox" name="feature" id="option1"
+                        value="durability">Durability</label>
+
+                <label for="option2"><input type="checkbox" name="feature" id="option2" value="easy-use">Ease of
+                    Use</label>
+
+                <label for="option3"><input type="checkbox" name="feature" id="option3"
+                        value="performance">Performance</label>
+
+                <label for="option4"><input type="checkbox" name="feature" id="option4" value="design">Design</label>
             </fieldset>
 
             <!-- WRITTEN REVIEW -->
             <fieldset>
                 <legend>Written Review (optional)</legend>
                 <div>Write your experience in more detail</div>
-                <label><textarea name="textarea" id="written-review" cols="40" rows="10"></textarea>.</label>
+
+                <label for="written-review"><textarea name="textarea" id="written-review" cols="40"
+                        rows="10"></textarea>.</label>
             </fieldset>
 
             <!-- USER NAME -->
             <fieldset>
                 <legend>Personal Info</legend>
                 <div>Your name (optional)</div>
-                <label><input type="text" name="name" id="user-name">.</label>
+                <label for="user-name"><input type="text" name="name" id="user-name">.</label>
             </fieldset>
 
             <!-- SUBMISSION BUTTON -->
-            <input type="submit" value="Send Product Review!">
-
+            <label for="submission"><input type="submit" value="Send Product Review!" id="submission"></label>
         </form>
     </main>
 
