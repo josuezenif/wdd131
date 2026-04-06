@@ -48,6 +48,10 @@ h1 {
     padding: .5rem;
 }
 
+.written {
+    color: rgb(141, 40, 40);
+}
+
 .form input {
     padding: 0.5rem;
     background-color: #eee;
