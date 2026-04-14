@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entretien Ménager Baez</title>
+    <meta name="author" content="Josue Baez Gomez">
+    <meta name="description"
+        content="This page is the page for cleaning company Entretien Ménager Baez. It consists of a form where the user can fill out and send their service request">
+    <link rel="stylesheet" href="styles/entretien.css">
+    <link rel="stylesheet" href="styles/entretien-large.css">
+    <script src="scripts/entretien.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-entretien-menager.jpg" alt="official logo entretien menager baez" width="200">
+        <button id="menu"></button>
+        <nav>
+            <a href="entretien-menager.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="services-prices.html">Services and Prices</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="cleaning-service">Request Cleaning Service</h1>
+        <form method="get" action="thanks-cleaning.html" class="form">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First name* <input type="text" name="fname" required></label>
+                <label>Last name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="123555123"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Request Info</legend>
+                <div>Service Type</div>
+                <label><input type="radio" name="service-type" value="commercial"> Commercial</label>
+                <label><input type="radio" name="service-type" value="domestic"> Domestic</label>
+                <label><input type="radio" name="service-type" value="exterior"> Exterior</label>
+
+                <div>Cleaning Service</div>
+                <label><input type="checkbox" name="entrance" value="yes"> Entrance/hallways</label>
+                <label><input type="checkbox" name="general" value="yes"> General maintenance</label>
+                <label><input type="checkbox" name="grass" value="yes"> Grass/leaves</label>
+                <label><input type="checkbox" name="snow" value="yes"> Shovel snow & entrance</label>
+                <label><input type="checkbox" name="other" value="yes"> Additional work</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Date and time</legend>
+                <label>Date to start: <input type="date" name="startDate"></label>
+                <label>Frequency:
+                    <select name="subject">
+                        <option value="">Please Select</option>
+                        <option value="one-time">One time service</option>
+                        <option value="weekly">Weekly service</option>
+                        <option value="two-weeks">Once two weeks</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="twice">Twice a week (winter)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other/additional work</legend>
+                <label for="additional-work">Other specefic work or comments: <textarea name="additional"
+                        id="additional-work-and-comments" placeholder="I ♡ Entretien Ménager Baez!" cols="40"
+                        rows="12"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Request cleaning service">
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span>
+            Entretien Ménager Baez 🇨🇦🇲🇽 | Quebec Canada 🍁
+        </p>
+        <p id="lastModified" class="current-year"></p>
+
+    </footer>
+
+</body>
+
+</html>
