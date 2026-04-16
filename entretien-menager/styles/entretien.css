@@ -138,7 +138,7 @@ h2 {
 
 .paragraph1 a {
     text-decoration: none;
-    color: blue;
+    color: rgb(16, 16, 209);
 }
 
 .paragraph1 a:hover {
@@ -249,6 +249,10 @@ footer {
         display: block;
     }
 
+    .description img {
+        max-width: 35em;
+    }
+
     .description p {
         margin-top: 1em;
         margin-bottom: 2em;
@@ -260,7 +264,8 @@ footer {
     }
 
     .about-us h1 {
-        margin-top: 1em;
+        position: relative;
+        top: 1em;
     }
 
     .our-info {
@@ -270,6 +275,9 @@ footer {
     .condos {
         display: flex;
         margin-bottom: 10px;
+        width: 100%;
+        max-width: 35em;
+        ;
     }
 
     .familiprix {
@@ -277,8 +285,8 @@ footer {
     }
 
     .familiprix img {
-        width: 200px;
-        max-width: 850px;
+        width: 100%;
+        max-width: 10em;
         margin-bottom: 10px;
     }
 }
@@ -389,7 +397,7 @@ input[type="submit"]:hover {
     max-width: 850px;
     opacity: 0.85;
     position: absolute;
-    top: 10em;
+    top: 9em;
     margin: 0 auto;
 }
 
