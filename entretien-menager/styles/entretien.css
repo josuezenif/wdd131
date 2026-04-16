@@ -1,7 +1,7 @@
 :root {
     /* color schema */
     --headerFooterColor: rgb(105, 215, 245);
-    --paragraphColor: rgb(221, 217, 214);
+    --paragraphColor: rgb(232, 232, 232);
 
     /* typography */
     --headingsFonts: Arial, Helvetica, sans-serif;
