@@ -137,13 +137,12 @@ h2 {
 }
 
 .paragraph1 a {
-    text-decoration: none;
-    color: rgb(16, 16, 209);
+    text-decoration: underline;
+    color: #0000EE;
 }
 
 .paragraph1 a:hover {
     color: purple;
-    border-bottom: 1.5px solid purple;
 }
 
 .contact {
